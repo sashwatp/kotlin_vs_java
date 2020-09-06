@@ -1,12 +1,19 @@
-package com.sashwat.kotlin.pojo_1_0
+package com.sashwat.kotlin.pojo
 
 import java.time.LocalDate
 
 /**
- * Do no write POJOs in Kotlin like THIS.
+ * NOTE: This code is just for example, do no write POJOs in Kotlin like THIS. Instead use Data classes
  */
 
-class User {
+/**
+ * All classes are by default public and closed (or final)
+ */
+class UserPojo {
+
+    /**
+     * Members are by default public
+     */
 
     private val name: String
     private val dateOfBirth: LocalDate

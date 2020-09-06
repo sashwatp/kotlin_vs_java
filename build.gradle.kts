@@ -12,6 +12,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    implementation("org.apache.commons", "commons-lang3", "3.0")
+    implementation("com.google.guava:guava:29.0-jre")
+    implementation("org.apache.commons", "commons-collections4", "4.0")
     testCompile("junit", "junit", "4.12")
 
     compileOnly("org.projectlombok", "lombok", "1.18.12")
