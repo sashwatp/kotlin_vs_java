@@ -1,6 +1,5 @@
 package com.sashwat.java.pojo;
 
-import com.sashwat.kotlin.pojo.Address;
 import lombok.Value;
 
 import java.time.LocalDate;

@@ -1,23 +1,24 @@
 package com.sashwat.kotlin.null_safety
 
-import com.sashwat.kotlin.pojo.User
+import com.sashwat.java.pojo.User
 
 
 fun nullReferenceType() {
     var data: String = "John"
 
-    data = null
+//    data = null         // Compiler complains
 }
 
 fun nonNullReferenceType(): String {
-    return null
+//    return null         // Compiler complains
+    return ""
 }
 
-fun safeCallOperator(user: User?): String? {
+fun safeCallOperator(user: com.sashwat.kotlin.pojo.User?): String? {
     return user?.name
 }
 
-fun elvisOperator(user: User?) : String {
+fun elvisOperator(user: com.sashwat.kotlin.pojo.User?) : String {
     return user?.name ?: "Default value"
 }
 
@@ -25,11 +26,18 @@ fun smartCasting(input: String?): Int {
     return if (input != null) {
         input.length
     } else {
-        input.length
+        0
+//        input.length
     }
 }
 
-fun getStreetAddress(user: User?): String? {
-    return user?.address?.street
+fun extractStreetAddress(user: User?): String? {
+//    if (user != null
+//        && user.getAddress() != null
+//        && user.getAddress().getStreet() != null) {
+//        return user.getAddress().getStreet()
+//    }
+
+    throw IllegalArgumentException()
 }
 

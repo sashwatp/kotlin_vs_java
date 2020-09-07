@@ -34,4 +34,22 @@ class UserPojo {
     private fun calculateYearOfBirth(): Int {
         return dateOfBirth.year
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as UserPojo
+
+        if (name != other.name) return false
+        if (dateOfBirth != other.dateOfBirth) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = name.hashCode()
+        result = 31 * result + dateOfBirth.hashCode()
+        return result
+    }
 }
