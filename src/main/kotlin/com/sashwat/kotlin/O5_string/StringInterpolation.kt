@@ -1,6 +1,6 @@
-package com.sashwat.kotlin.string
+package com.sashwat.kotlin.O5_string
 
-import com.sashwat.kotlin.pojo.User
+import com.sashwat.kotlin.O2_pojo.User
 import java.time.LocalDate
 
 class StringInterpolation {

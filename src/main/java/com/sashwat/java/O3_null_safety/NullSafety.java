@@ -1,6 +1,6 @@
-package com.sashwat.java.null_safety;
+package com.sashwat.java.O3_null_safety;
 
-import com.sashwat.kotlin.pojo.User;
+import com.sashwat.kotlin.O2_pojo.User;
 import lombok.NonNull;
 
 import java.util.Optional;

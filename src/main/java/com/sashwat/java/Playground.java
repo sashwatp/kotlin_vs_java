@@ -1,6 +1,6 @@
 package com.sashwat.java;
 
-import com.sashwat.java.pojo.User;
+import com.sashwat.java.O2_pojo.User;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package com.sashwat.kotlin.pojo
+package com.sashwat.kotlin.O2_pojo
 
 import java.time.LocalDate
 

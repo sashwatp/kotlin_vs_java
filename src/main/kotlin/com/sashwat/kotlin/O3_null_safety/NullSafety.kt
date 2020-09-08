@@ -1,6 +1,6 @@
-package com.sashwat.kotlin.null_safety
+package com.sashwat.kotlin.O3_null_safety
 
-import com.sashwat.java.pojo.User
+import com.sashwat.java.O2_pojo.User
 
 
 fun nullReferenceType() {
@@ -14,11 +14,11 @@ fun nonNullReferenceType(): String {
     return ""
 }
 
-fun safeCallOperator(user: com.sashwat.kotlin.pojo.User?): String? {
+fun safeCallOperator(user: com.sashwat.kotlin.O2_pojo.User?): String? {
     return user?.name
 }
 
-fun elvisOperator(user: com.sashwat.kotlin.pojo.User?) : String {
+fun elvisOperator(user: com.sashwat.kotlin.O2_pojo.User?) : String {
     return user?.name ?: "Default value"
 }
 

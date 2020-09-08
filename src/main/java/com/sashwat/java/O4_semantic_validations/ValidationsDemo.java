@@ -1,4 +1,4 @@
-package com.sashwat.java.semantic_validations;
+package com.sashwat.java.O4_semantic_validations;
 
 import com.google.common.base.Preconditions;
 import org.apache.commons.collections4.CollectionUtils;

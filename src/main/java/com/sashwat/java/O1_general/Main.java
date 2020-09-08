@@ -1,4 +1,4 @@
-package com.sashwat.java.general;
+package com.sashwat.java.O1_general;
 
 public class Main {
 

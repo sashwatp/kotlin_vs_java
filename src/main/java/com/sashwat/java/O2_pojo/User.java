@@ -1,4 +1,4 @@
-package com.sashwat.java.pojo;
+package com.sashwat.java.O2_pojo;
 
 import lombok.Value;
 

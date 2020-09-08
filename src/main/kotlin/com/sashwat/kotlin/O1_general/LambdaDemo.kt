@@ -1,4 +1,4 @@
-package com.sashwat.kotlin.general
+package com.sashwat.kotlin.O1_general
 
 import java.util.stream.Collectors
 

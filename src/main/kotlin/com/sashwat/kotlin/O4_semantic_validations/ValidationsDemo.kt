@@ -1,4 +1,4 @@
-package com.sashwat.kotlin.semantic_validations
+package com.sashwat.kotlin.O4_semantic_validations
 
 class ValidationsDemo {
 
