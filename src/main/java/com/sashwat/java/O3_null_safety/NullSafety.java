@@ -19,7 +19,7 @@ public class NullSafety {
             return Optional.of(user.getAddress().getStreet());
         }
 
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("Street address not available");
     }
 
 }

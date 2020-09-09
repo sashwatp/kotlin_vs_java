@@ -32,12 +32,12 @@ fun smartCasting(input: String?): Int {
 }
 
 fun extractStreetAddress(user: User?): String? {
-//    if (user != null
-//        && user.getAddress() != null
-//        && user.getAddress().getStreet() != null) {
-//        return user.getAddress().getStreet()
-//    }
+    if (user != null
+        && user.getAddress() != null
+        && user.getAddress().getStreet() != null) {
+        return user.getAddress().getStreet()
+    }
 
-    throw IllegalArgumentException()
+    throw IllegalArgumentException("Street address not available")
 }
 

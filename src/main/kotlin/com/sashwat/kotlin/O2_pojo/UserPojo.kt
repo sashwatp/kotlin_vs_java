@@ -14,7 +14,6 @@ class UserPojo {
     /**
      * Members are by default public
      */
-
     private val name: String
     private val dateOfBirth: LocalDate
 
