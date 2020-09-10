@@ -4,13 +4,13 @@ import java.util.stream.Collectors
 
 /**
  *
- * NOTE: In Kotlin these are not lazy operations as with Java Stream. 
+ * NOTE: In Kotlin these are not lazy operations as with Java Stream.
+ *
+ * 1. Datatype declaration is optional - Do not tell the compiler which it already knows.
  */
 fun demo(myList: List<String>): List<String> {
 
     return myList.stream()
         .filter({ item -> item.contains("a") })
         .collect(Collectors.toList())
-
-
 }
