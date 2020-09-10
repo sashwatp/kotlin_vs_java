@@ -3,7 +3,7 @@ package com.sashwat.kotlin.O6_async
 import com.sashwat.kotlin.O6_async.model.Item
 import com.sashwat.kotlin.O6_async.model.Post
 
-class SyncDemmo {
+class SyncDemo {
 
     fun runDemo(item: Item) {
         val token = requestToken()
