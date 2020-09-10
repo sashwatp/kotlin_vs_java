@@ -3,7 +3,13 @@ package com.sashwat.kotlin.O2_pojo
 import java.time.LocalDate
 
 fun main() {
-    val user = User(name = "John",
+
+    var user = User("Jill", LocalDate.now(), null)
+
+    /**
+     * 1. Named Parameters
+     */
+    val user2 = User(name = "John",
         dateOfBirth = LocalDate.now(),
         address = Address("1011 Pike Street")
     )
@@ -11,7 +17,10 @@ fun main() {
 
     val copyUser = user.copy()
 
-    val copyUser2 = user.copy(name = "Jill")
+    val copyUser2 = user2.copy(name = "Jill")
 
+    /**
+     * NOTE: You do not need to use getAddress. Kotlin treats them properties.
+     */
     println(copyUser.address == user.address)
 }
