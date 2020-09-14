@@ -12,15 +12,15 @@ class SyncDemo {
         processPost(post)
     }
 
-    fun requestToken(): String {
+    private fun requestToken(): String {
         return ""
     }
 
-    fun createPost(item: Item): Post {
+    private fun createPost(item: Item): Post {
         return Post("")
     }
 
-    fun processPost(post: Post) {
+    private fun processPost(post: Post) {
 
     }
 }

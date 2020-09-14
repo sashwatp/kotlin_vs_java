@@ -14,3 +14,8 @@ fun demo(myList: List<String>): List<String> {
         .filter({ item -> item.contains("a") })
         .collect(Collectors.toList())
 }
+
+/**
+ * Final code
+ */
+fun convertedCode(myList: List<String>) = myList.filter { it.contains("a") }

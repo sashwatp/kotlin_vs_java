@@ -1,6 +1,6 @@
 package com.sashwat.kotlin.O3_null_safety
 
-import com.sashwat.java.O2_pojo.User
+import com.sashwat.kotlin.O2_pojo.User
 
 
 fun nullReferenceType() {
@@ -14,11 +14,11 @@ fun nonNullReferenceType(): String {
     return ""
 }
 
-fun safeCallOperator(user: com.sashwat.kotlin.O2_pojo.User?): String? {
+fun safeCallOperator(user: User?): String? {
     return user?.name
 }
 
-fun elvisOperator(user: com.sashwat.kotlin.O2_pojo.User?) : String {
+fun elvisOperator(user: User?): String {
     return user?.name ?: "Default value"
 }
 
@@ -31,13 +31,18 @@ fun smartCasting(input: String?): Int {
     }
 }
 
-fun extractStreetAddress(user: User?): String? {
+fun extractStreetAddress(user: User?): String {
 //    if (user != null
 //        && user.getAddress() != null
 //        && user.getAddress().getStreet() != null) {
 //        return user.getAddress().getStreet()
 //    }
 
-    throw IllegalArgumentException("Street address not available")
+
+    /**
+     * Code to nested null check
+     */
+    return user?.address?.street
+        ?: throw IllegalArgumentException("Street address not available")
 }
 

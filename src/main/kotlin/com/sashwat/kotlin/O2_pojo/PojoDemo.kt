@@ -7,7 +7,7 @@ fun main() {
     var user = User("Jill", LocalDate.now(), null)
 
     /**
-     * 1. Named Parameters
+     * 1. Named Parameters allows you to pass individual fields separately.
      */
     val user2 = User(name = "John",
         dateOfBirth = LocalDate.now(),
