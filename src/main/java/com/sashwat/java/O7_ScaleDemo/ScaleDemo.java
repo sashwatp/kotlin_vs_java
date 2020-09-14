@@ -11,10 +11,8 @@ public class ScaleDemo {
                 .mapToObj(ScaleDemo::createThread)
                 .collect(Collectors.toList());
 
-
         threadList.stream()
                 .forEach((t) -> join(t));
-
     }
 
     private static void join(Thread t) {
