@@ -1,9 +1,15 @@
 package com.sashwat.kotlin
 
-import com.sashwat.kotlin.O2_pojo.Address
-import com.sashwat.kotlin.O2_pojo.User
-import java.time.LocalDate
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
-fun main() {
-    val conciseUser = User("", LocalDate.now(), Address())
+fun main() = GlobalScope.launch {
+    println("This is great ${Thread.currentThread()}")
 }
+
+
+        suspend fun myFunction() {
+            // Do Something
+            delay(1000)
+        }

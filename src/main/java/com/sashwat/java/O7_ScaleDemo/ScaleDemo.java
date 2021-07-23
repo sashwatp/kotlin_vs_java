@@ -26,7 +26,7 @@ public class ScaleDemo {
     private static Thread createThread(int i) {
         Thread t = new Thread(() -> {
             try {
-                Thread.sleep(1000L);
+                Thread.sleep(10L);
                 System.out.print(".");
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
